@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
 # TODO: Add times titles were inputted - along with the date - with an extra line
+# TODO: Add colors to output using the third party "rich" module
 
 import os, sys, datetime
 import pyfiglet
-
-# Setup three dicts to append to - based on type
 
 dvds = {}
 
@@ -15,9 +14,6 @@ digital_purchase = {}
 
 movies = (dvds, blu_rays, digital_purchase)
 
-f = pyfiglet.figlet_format("MOVIES", font="univers")
-print(f)
-
 now = datetime.datetime.now()
 
 disk = "DVD: **: "
@@ -25,6 +21,9 @@ blu = "BLU-RAY: **: "
 digit = "DIGITAL PURCHASE: **: "
 
 new_user = True
+
+f = pyfiglet.figlet_format("MOVIES", font="univers")
+print(f)
 
 # Welcome user and show what they already have in their list of movies
 print("Welcome! This is a script for keeping track of your movie collection.")
