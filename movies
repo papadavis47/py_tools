@@ -3,6 +3,7 @@
 # TODO: Add times titles were inputted - along with the date - with an extra line
 
 import os, sys, datetime
+import pyfiglet
 
 # Setup three dicts to append to - based on type
 
@@ -13,6 +14,9 @@ blu_rays = {}
 digital_purchase = {}
 
 movies = (dvds, blu_rays, digital_purchase)
+
+f = pyfiglet.figlet_format("MOVIES", font="univers")
+print(f)
 
 now = datetime.datetime.now()
 
