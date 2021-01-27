@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# TODO: Add times titles were inputted - along with the date - with an extra line
+
 import os, sys, datetime
 
 # Setup three dicts to append to - based on type
